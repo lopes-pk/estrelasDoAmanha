@@ -1,25 +1,61 @@
-:root{
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
    /* brand */
-   --brand-light:#F67841;
-   --brand-mid:#F3541C;
-   --brand-dark:#E43A12;
+   --brand-light: #F67841;
+   --brand-mid: #F3541C;
+   --brand-dark: #E43A12;
 
    /* text */
-   --text-primary:#292524;
-   --text-secondary:#57534E;
-   --text-tertiary:#8F8881;
-   --text-highlight:#E43A12;
+   --text-primary: #292524;
+   --text-secondary: #57534E;
+   --text-tertiary: #8F8881;
+   --text-highlight: #E43A12;
 
    /* surface */
-   --surface-primary:#FFFFFF;
-   --surface-secondary:#FEE7D6;
-   --surface-disabled:#E7E5E4;
+   --surface-primary: #FFFFFF;
+   --surface-secondary: #FEE7D6;
+   --surface-disabled: #f7dacb;
 
    /* stroke */
-   --stroke-default:#D6D3D1;
-   --stroke-highlight:#F3541C;
+   --stroke-default: #D6D3D1;
+   --stroke-highlight: #F3541C;
 
    /* semantic */
-   --semantic-error:#DC2626;
+   --semantic-error: #DC2626;
 
+   /* fonts */
+   --title-sm: 400 20px/100% "Schoolbell", serif;;
+   --title-lg: 600 40px/125% "Poppins", serif;;
+   --title-xl:600 24px/125% "Poppins", serif;;
+   --text-sm: 400 16px/150% "Poppins", serif;;
+   --text-legend: 600 16px/125% "Poppins", serif;;
+   --text-description: 400 14px/140% "Poppins", serif;;
+
+  
+}
+
+body {
+   display: grid;
+   grid-template-columns: 1.075fr 1fr;
+   overflow: hidden;
+}
+
+.disabled{
+   color: var(--stroke-default);
+}
+.title-sm {
+   font: var(--title-sm);
+}
+
+.title-lg {
+   font: var(--title-lg);
+}
+
+.text-sm {
+   font: var(--text-sm);
 }

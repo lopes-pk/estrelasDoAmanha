@@ -1,0 +1,245 @@
+#form {
+   background-color: var(--surface-primary);
+   padding: 64px;
+   display: flex;
+   flex-direction: column;
+   overflow-y: scroll;
+   height: 100vh;
+}
+
+.back {
+   display: flex;
+   align-items: center;
+   column-gap: 8px;
+   font: var(--text-sm);
+   color: #57534E;
+}
+
+h2 {
+   margin-block: 24px 8px;
+   font: var(--title-xl);
+}
+
+.form-description {
+   font: var(--text-sm);
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   margin-top: 48px;
+
+
+   legend {
+      font: var(--text-legend);
+
+   }
+
+   label {
+      color: var(--text-secondary);
+      margin-block: 24px 4px;
+      font: var(--text-description);
+   }
+
+   p {
+      font: var(--text-description);
+      color: #57534E;
+   }
+
+   input[type="text"],
+   input[type="date"],
+   input[type="email"],
+   select {
+      appearance: none;
+      border-radius: 8px;
+      height: 48px;
+      padding: 0 16px;
+      border: 1px solid var(--stroke-default);
+
+
+      &:focus {
+         border: 1px solid var(--stroke-highlight);
+         outline: none;
+         box-shadow: 0 0 8px var(--brand-light);
+      }
+
+   }
+
+   input[type="date"] {
+      font: var(--text-sm);
+   }
+
+   select {
+      background: url(../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 14.8px);
+
+   }
+
+   textarea {
+      font: var(--text-sm);
+      border-radius: 8px;
+      border: 1px solid var(--stroke-default);
+      padding: 12px 16px;
+      height: 120px;
+
+      &:focus {
+         border: 1px solid var(--stroke-highlight);
+         outline: none;
+         box-shadow: 0 0 8px var(--brand-light);
+      }
+   }
+
+   .dropzone {
+      border: 1px dashed var(--stroke-default);
+      border-radius: 8px;
+      gap: 15px;
+      display: grid;
+      justify-items: center;
+      text-align: center;
+      padding: 34px 16px;
+      position: relative;
+      margin-bottom: 48px;
+
+      img {
+         width: 48px;
+         height: 48px;
+      }
+
+      p {
+         font: var(--text-sm);
+         color: #A8A29E;
+      }
+
+      & input {
+         opacity: 0;
+         width: 100%;
+         height: 100%;
+         inset: 0;
+         position: absolute;
+      }
+
+   }
+
+   .address {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      column-gap: 20px;
+
+      >div {
+         margin-top: 24px;
+
+         input {
+            margin-top: 4px;
+         }
+      }
+
+   }
+
+   input {
+      width: 100%;
+   }
+
+   legend:nth-of-type(3),
+   legend:nth-of-type(4) {
+      margin-top: 48px;
+   }
+
+   .title-registration {
+      margin-bottom: 24px;
+   }
+
+   .timetable-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-block: 36px 24px;
+   }
+
+   .timetable {
+
+      display: flex;
+      align-items: center;
+      row-gap: 8px;
+      flex-direction: column;
+      padding-block: 32px;
+      width: 256px;
+      border: 1px solid var(--stroke-default);
+      border-radius: 8px;
+      position: relative;
+
+      input[type="radio"] {
+
+         width: 22px;
+         height: 22px;
+         position: absolute;
+         top: 10px;
+         left: 10px;
+      }
+   }
+
+   .sports-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-block: 16px 48px;
+   }
+
+   .sport {
+      display: flex;
+      align-items: center;
+      row-gap: 8px;
+      flex-direction: column;
+      padding-block: 32px;
+      width: 120px;
+      border: 1px solid var(--stroke-default);
+      border-radius: 8px;
+      position: relative;
+
+      input[type="radio"] {
+
+         width: 22px;
+         height: 22px;
+         position: absolute;
+         top: 10px;
+         left: 10px;
+      }
+   }
+
+   .terms-wrapper {
+      display: flex;
+      column-gap: 12px;
+      font: var(--text-legend);
+
+      input[type="checkbox"] {
+         width: 24px;
+         height: 24px;
+      }
+
+      strong {
+         color: #E43A12;
+
+      }
+
+   }
+
+   .buttons-wrapper{
+      display: flex;
+      column-gap: 16px;
+      flex-flow: row-reverse;
+      margin-top: 64px;
+
+      button{
+         font: var(--text-legend);
+         cursor: pointer;
+         border: 1px solid var(--brand-dark);
+         border-radius: 8px;
+         padding: 12px 24px;
+      }
+      & :nth-last-of-type(1){
+         color: var(--brand-dark);
+      }
+      & :nth-last-of-type(2){
+         color: #ffffff;
+         background-color: var(--brand-dark);
+      }
+   }
+   
+}
