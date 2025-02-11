@@ -13,6 +13,5 @@ Clone este repositório.
 Acesse o diretório do projeto.
 Abra o arquivo *index.html* no navegador ou utilize o plugin **Live Server** no VS Code.
 ## 🔧 Futuras Melhorias
-- Refatorar o CSS para melhorar a legibilidade.
 - Adicionar requisitos aos inputs.<br>
-- Tornar o projeto responsivo.
+- Tornar o projeto mais responsivo.
