@@ -48,14 +48,3 @@ body {
 .disabled{
    color: var(--stroke-default);
 }
-.title-sm {
-   font: var(--title-sm);
-}
-
-.title-lg {
-   font: var(--title-lg);
-}
-
-.text-sm {
-   font: var(--text-sm);
-}

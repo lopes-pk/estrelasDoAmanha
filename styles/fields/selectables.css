@@ -1,0 +1,40 @@
+.timetable {
+   display: flex;
+   align-items: center;
+   row-gap: 8px;
+   flex-direction: column;
+   padding-block: 32px;
+   width: 256px;
+   border: 1px solid var(--stroke-default);
+   border-radius: 8px;
+   position: relative;
+
+   input[type="radio"] {
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+   }
+}
+
+.sport {
+   display: flex;
+   align-items: center;
+   row-gap: 8px;
+   flex-direction: column;
+   padding-block: 32px;
+   width: 120px;
+   border: 1px solid var(--stroke-default);
+   border-radius: 8px;
+   position: relative;
+
+   input[type="radio"] {
+
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+   }
+}
