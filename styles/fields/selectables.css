@@ -4,7 +4,7 @@
    row-gap: 8px;
    flex-direction: column;
    padding-block: 32px;
-   width: 256px;
+   width: 154px;
    border: 1px solid var(--stroke-default);
    border-radius: 8px;
    position: relative;
@@ -21,10 +21,9 @@
 .sport {
    display: flex;
    align-items: center;
-   row-gap: 8px;
    flex-direction: column;
    padding-block: 32px;
-   width: 120px;
+   width: 154px;
    border: 1px solid var(--stroke-default);
    border-radius: 8px;
    position: relative;
@@ -36,5 +35,14 @@
       position: absolute;
       top: 10px;
       left: 10px;
+   }
+}
+
+@media (width >= 80em){
+   .timetable{
+      width:256px ;
+   }
+   .sport{
+      width: 120px;
    }
 }

@@ -1,9 +1,8 @@
 #form {
    background-color: var(--surface-primary);
-   padding: 64px;
+   padding: var(--padding-page);
    display: flex;
    flex-direction: column;
-   overflow-y: scroll;
    height: 100vh;
 }
 
@@ -50,14 +49,16 @@ form {
 
    .timetable-wrapper {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 16px;
       margin-block: 36px 24px;
    }
 
    .sports-wrapper {
       display: flex;
       flex-wrap: wrap;
-      gap: 30px;
+      justify-content: center;
+      gap: 16px;
       margin-block: 16px 48px;
    }
 
@@ -79,9 +80,12 @@ form {
 
    .buttons-wrapper {
       display: flex;
+      flex-direction: column;
       column-gap: 16px;
-      flex-flow: row-reverse;
+      flex-flow: column-reverse;
+      gap:16px ;
       margin-top: 64px;
+      margin-bottom:24px ;
 
       button {
          font: var(--text-legend);
@@ -101,4 +105,46 @@ form {
       }
    }
 
+}
+
+@media (width >=80em) {
+   #form {
+      overflow-y: scroll;
+
+      & .timetable-wrapper {
+         column-gap: 12px;
+      }
+
+      & .sports-wrapper {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: initial;
+         gap: 12px;
+         margin-block: 16px 48px;
+      }
+
+      & .buttons-wrapper {
+         display: flex;
+         column-gap: 16px;
+         flex-flow: row-reverse;
+         margin-top: 64px;
+   
+         button {
+            font: var(--text-legend);
+            cursor: pointer;
+            border: 1px solid var(--brand-dark);
+            border-radius: 8px;
+            padding: 12px 24px;
+         }
+   
+         & :nth-last-of-type(1) {
+            color: var(--brand-dark);
+         }
+   
+         & :nth-last-of-type(2) {
+            color: #ffffff;
+            background-color: var(--brand-dark);
+         }
+      }
+   }
 }

@@ -29,22 +29,48 @@
    --semantic-error: #DC2626;
 
    /* fonts */
-   --title-sm: 400 20px/100% "Schoolbell", serif;;
-   --title-lg: 600 40px/125% "Poppins", serif;;
-   --title-xl:600 24px/125% "Poppins", serif;;
-   --text-sm: 400 16px/150% "Poppins", serif;;
-   --text-legend: 600 16px/125% "Poppins", serif;;
-   --text-description: 400 14px/140% "Poppins", serif;;
+   --title-sm: 400 20px/100% "Schoolbell", serif;
+   ;
+   --title-lg: 600 40px/125% "Poppins", serif;
+   ;
+   --title-xl: 600 24px/125% "Poppins", serif;
+   ;
+   --text-sm: 400 16px/150% "Poppins", serif;
+   ;
+   --text-legend: 600 16px/125% "Poppins", serif;
+   ;
+   --text-description: 400 14px/140% "Poppins", serif;
+   ;
 
-  
+   --padding-page:24px;
 }
 
 body {
-   display: grid;
-   grid-template-columns: 1.075fr 1fr;
+   display: initial;
    overflow: hidden;
+   overflow-y: scroll;
 }
 
-.disabled{
+.disabled {
    color: var(--stroke-default);
+}
+
+.desktop-only {
+   display: none;
+}
+
+@media (width >=80em) {
+   :root{
+      --padding-page: 64px;
+   }
+   body {
+      display: grid;
+      grid-template-columns: 1.075fr 1fr;
+      overflow-y: none;
+   }
+
+   .desktop-only {
+      display: initial;
+   }
+
 }
